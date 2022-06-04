@@ -69,5 +69,8 @@ typings/
 *.sln
 *.sw?
 
+# Enviroment variable
+.env
+
 # package-lock.json
 package-lock.json
