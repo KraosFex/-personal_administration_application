@@ -1,10 +1,9 @@
-// Rements 
-const express = require('express')
-
+// Requirements 
+const express = require('express');
 const server = express();
+const router = require('./routes/index');
 
-server.get('/', (req,res) => {
-    console.log('Hello world')
-})
+// Route main
+server.use('/', router);
 
 module.exports = server;
