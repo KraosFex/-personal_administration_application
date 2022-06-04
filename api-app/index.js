@@ -17,10 +17,11 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const express = require('express')
+// Requires
+const server = require('./src/app')
 
-const server = express();
+// Port
+const PORT = process.env.PORT || 3001;
 
-const PORT = 3000
-
-server.listen(PORT, () => console.log(`Conectados al puesto ${PORT}`) )
+// linsten
+server.listen(PORT, () => console.log(`Conectados al puerto ${PORT}`) )
